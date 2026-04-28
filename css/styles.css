@@ -1,0 +1,118 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.35)),
+        url("../assets/cristiano.png") center/cover no-repeat;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .card {
+      width: min(80%, 380px);
+      padding: 28px 22px;
+      border-radius: 24px;
+      background: rgba(10, 10, 10, 0.58);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+      text-align: center;
+      backdrop-filter: blur(16px);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: rgba(255, 215, 0, 0.14);
+      border: 1px solid rgba(255, 215, 0, 0.45);
+      color: #ffd700;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: 26px;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+
+    .goals-box {
+      margin: 0 auto 20px;
+      padding: 20px 12px;
+      border-radius: 20px;
+      background: linear-gradient(145deg, rgba(255, 215, 0, 0.18), rgba(255, 255, 255, 0.06));
+      border: 1px solid rgba(255, 215, 0, 0.35);
+    }
+
+    .goals-number {
+      font-size: 72px;
+      font-weight: 900;
+      color: #ffd700;
+      text-shadow: 0 0 25px rgba(255, 215, 0, 0.35);
+    }
+
+    .goals-label {
+      margin-top: 6px;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.85);
+      text-transform: uppercase;
+    }
+
+    .progress-area {
+      margin-top: 12px;
+    }
+
+    .progress-info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.72);
+      margin-bottom: 6px;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 8px;
+      background: rgba(255, 255, 255, 0.16);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #ffd700, #ff7b00);
+      border-radius: 999px;
+      transition: width 0.8s ease;
+    }
+
+    .footer {
+      margin-top: 16px;
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.58);
+    }
