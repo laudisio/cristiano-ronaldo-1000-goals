@@ -9,11 +9,18 @@
       min-height: 100vh;
       background:
         linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.35)),
-        url("../assets/cristiano.png") center/cover no-repeat;
+        url("../assets/cristiano.png") right center / cover no-repeat;
       color: white;
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+
+    body::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at center, transparent 20%, rgba(0,0,0,0.7));
     }
 
     .container {
@@ -115,4 +122,12 @@
       margin-top: 16px;
       font-size: 11px;
       color: rgba(255, 255, 255, 0.58);
+    }
+    
+    @media (max-width: 768px) {
+        body {
+            background:
+            linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.6)),
+            url("cristiano4.png") 75% center / cover no-repeat;
+        }
     }
