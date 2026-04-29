@@ -4,14 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="theme-color" content="#000000">
-  <title>CR7 - 1000 Goals Tracker</title>
+  <link rel="icon" href="./assets/favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon.png" />
+  <title>Goals Legacy - CR7 1000 Goals Tracker</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
   <main class="container">
-    <section class="card">
-      <div class="badge">CR7 Tracker</div>
+    <section class="flip-card" id="flipCard">
+      <div class="flip-card-inner">
+        <div class="card card-front">
+
+      <div class="badge">Goals Legacy - CR7 Tracker</div>
 
       <h1>Road to 1000 Goals</h1>
       <p class="subtitle">Tracking Cristiano Ronaldo’s legacy</p>
@@ -35,8 +42,88 @@
       <div id="lastUpdated" class="footer">
         Loading data...
       </div>
+
+        <button class="join-button" id="joinButton">
+          Join Now<br>1 Goal = 1 Tree 🌱
+        </button>
+        </div>
+
+        <div class="card card-back">
+          <div class="donation-tag">Goals Legacy</div>
+          
+          <h2>Every Goal Can Create Impact</h2>
+
+          <p>
+            Join the challenge: every Cristiano Ronaldo goal is a chance to support the planet.
+          </p>
+          
+          <div class="impact-line">
+            <span>1 Goal</span>
+            <span>=</span>
+            <span>1 Tree 🌱</span>
+          </div>
+
+          <a
+            class="donate-button"
+            href="https://onetreeplanted.org/products/plant-trees"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Donate a Tree
+          </a>
+
+          <button class="donated-button" id="donatedButton">
+            I Already Donated
+          </button>
+
+          <div class="donation-counter">
+            <span id="donationCount">0</span> supporters joined the challenge
+          </div>
+
+          <p class="donation-note">
+            Donations go directly to One Tree Planted.<br>This is an independent fan project.
+          </p>
+
+          <button class="back-button" id="backButton">
+            Back to Goal Tracker
+          </button>
+        </div>
+      </div>
     </section>
+
   </main>
+
+  <div class="email-popup-overlay" id="emailPopup">
+    <div class="email-popup">
+      <button class="email-popup-close" id="closeEmailPopup">×</button>
+
+      <div class="email-popup-icon">🌱</div>
+
+      <h2>Join Goals Legacy</h2>
+
+      <p>
+        Want to receive updates about future football impact projects?
+      </p>
+
+      <input
+        type="email"
+        id="emailInput"
+        placeholder="Enter your email"
+      />
+
+      <button id="subscribeButton" class="subscribe-button">
+        Subscribe
+      </button>
+
+      <p class="email-popup-policy">
+        We’ll only use your email to send project updates. No spam.
+        By subscribing, you agree to our
+        <a href="privacy.html" target="_blank">Privacy Policy</a>.
+      </p>
+
+      <p id="emailPopupMessage" class="email-popup-message"></p>
+    </div>
+  </div>
 
   <script src="js/config.js"></script>
 
