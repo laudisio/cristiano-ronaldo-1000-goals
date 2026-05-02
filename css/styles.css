@@ -398,6 +398,27 @@
       font-size: 12px !important;
       color: #ffd700 !important;
     }
+    
+    .footer-credit {
+      position: fixed;
+      bottom: 12px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 11px;
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      z-index: 10;
+    }
+    
+    .footer-credit a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    .footer-credit a:hover {
+      text-decoration: underline;
+    }
 
     @media (max-width: 768px) {
       body {
