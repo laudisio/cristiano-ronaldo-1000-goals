@@ -442,3 +442,8 @@
         padding: 24px 20px;
       }
     }
+      .footer-credit {
+        font-size: 10px;
+        bottom: 8px;
+      }
+    }
